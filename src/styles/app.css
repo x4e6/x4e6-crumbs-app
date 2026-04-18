@@ -151,6 +151,19 @@ body{
   border-color: rgba(74,163,255,.55);
   background: linear-gradient(135deg, rgba(74,163,255,.32), rgba(44,125,255,.20));
 }
+.btn--cta{
+  border-color: rgba(74,163,255,.90);
+  background: linear-gradient(135deg, rgba(74,163,255,.62), rgba(44,125,255,.42));
+  box-shadow:
+    0 14px 40px rgba(74,163,255,.22),
+    0 0 0 6px rgba(74,163,255,.12);
+}
+.btn--cta:hover{
+  border-color: rgba(74,163,255,1);
+  box-shadow:
+    0 16px 46px rgba(74,163,255,.28),
+    0 0 0 7px rgba(74,163,255,.14);
+}
 .btn--ghost{
   border-color: transparent;
   background: transparent;

@@ -24,6 +24,16 @@ npx serve -l 5173
 
 Дальше откройте `http://localhost:5173` и перейдите на `#/test`.
 
+## Деплой на Netlify
+
+Проект **без сборки**: в прод попадают `index.html` и папка `src/` как есть (ES modules).
+
+1. **Build command:** оставьте **пустым** (не используйте `npm run build` — в репозитории нет `package.json` и шага сборки).
+2. **Publish directory:** **`.`** (корень репозитория), **не** `dist`, **не** `public` — иначе не попадёт `index.html` или `src/`.
+3. **Base directory:** пусто (если это не монorepo).
+
+В репозитории уже есть `netlify.toml` (публикация из корня) и `_redirects` (SPA fallback для путей без совпадающего файла; статика вроде `/src/...` отдаётся как файлы).
+
 ## Подключение Google Sheets
 
 Сейчас проект использует локальные данные `src/modules/test/test.data.sample.js`.

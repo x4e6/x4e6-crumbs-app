@@ -1,7 +1,15 @@
 export const routes = [
   {
     path: "/",
-    load: () => import("../modules/test/test.route.js"),
+    load: () => import("../modules/intro/intro.route.js"),
+  },
+  {
+    path: "/intro",
+    load: () => import("../modules/intro/intro.route.js"),
+  },
+  {
+    path: "/description",
+    load: () => import("../modules/description/description.route.js"),
   },
   {
     path: "/test",

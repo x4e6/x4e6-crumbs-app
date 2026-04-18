@@ -61,7 +61,7 @@ export function createRouter({ routes, mountEl }) {
 
   function start() {
     window.addEventListener("hashchange", render);
-    if (!window.location.hash) window.location.hash = "#/test";
+    if (!window.location.hash) window.location.hash = "#/intro";
     render();
   }
 
